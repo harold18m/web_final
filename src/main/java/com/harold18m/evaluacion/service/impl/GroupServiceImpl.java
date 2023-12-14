@@ -4,6 +4,7 @@ import com.harold18m.evaluacion.entity.Group;
 import com.harold18m.evaluacion.repository.GroupRepository;
 import com.harold18m.evaluacion.service.GroupService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
@@ -11,6 +12,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class GroupServiceImpl implements GroupService {
 
+    @Autowired
     private GroupRepository groupRepository;
     @Override
     public List<Group> getAllGroups() {

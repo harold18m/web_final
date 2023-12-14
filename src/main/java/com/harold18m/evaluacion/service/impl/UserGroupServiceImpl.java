@@ -14,6 +14,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class UserGroupServiceImpl implements UserGroupService {
 
+    @Autowired
     private UserGroupRepository userGroupRepository;
     @Override
     public List<UserGroup> getAllUserGroups() {

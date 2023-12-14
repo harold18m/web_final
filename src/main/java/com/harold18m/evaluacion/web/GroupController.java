@@ -11,6 +11,7 @@ import java.util.Optional;
 @RequestMapping("/api/groups")
 public class GroupController {
 
+    @Autowired
     private GroupService groupService;
 
     @GetMapping
